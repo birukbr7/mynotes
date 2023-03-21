@@ -82,6 +82,7 @@ class _LoginViewState extends State<LoginView> {
                 (route) => false,
               );
             },
+            //as
             child: const Text('Not registered yet? Register here!'),
           )
         ],
