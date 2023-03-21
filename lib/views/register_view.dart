@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 
 import 'dart:developer' as devtools show log;
 
+import 'package:mynotes/constants/route.dart';
+
 class RegisterView extends StatefulWidget {
   const RegisterView({Key? key}) : super(key: key);
 
@@ -81,7 +83,7 @@ class _RegisterViewState extends State<RegisterView> {
           TextButton(
             onPressed: () {
               Navigator.of(context).pushNamedAndRemoveUntil(
-                '/login/',
+                loginRoute,
                 (route) => false,
               );
             },
